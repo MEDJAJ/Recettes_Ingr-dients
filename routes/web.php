@@ -67,6 +67,4 @@ Route::put('recettes/{recette}', [RecetteController::class, 'update'])
     ->middleware('auth')
     ->name('recettes.update');
 
-Route::get('statistique',[StatistiqueController::class,'index']);
 
-Route::get('/recettes', [RecetteController::class, 'index'])->name('recettes.index');
